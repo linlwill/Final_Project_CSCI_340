@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>New Age Dream Designs</title>
+<link href="mobile.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+	<div data-role="page" id="page">
+		<div data-role="header">
+	 	 <h1 align="center">New Age Dream Designs</h1>
+		</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Services</a></li>
+            <li><a href="#page3">Contact Us</a></li>
+		</ul>		
+	</div>
+    <div data-role="content" data-theme="e">
+           <img id="logo" src="logo_again_alpha.jpg" alt="New Age Dream Designs Logo" width= "auto">
+                        <figcaption style="clear: left;margin: .75em 0;text-align: left;font-style: italic;line-height: 1.5em;"
+                                >Image By: <a href="http://instagram.com/linlwill">Lindsay Williams</a></figcaption>
+                </figure>
+                <audio id="audioplayer" autoplay="autoplay" controls>
+                    <source src="Divein.mp3" type="audio/mpeg">
+                    <source src="Divein.ogg" type="audio/ogg">
+                    Your browser does not support the <code>audio</code> element.
+                </audio>	
+		<h1>Who We Are</h1>
+
+We are an Indianapolis based company that specializes in web design, photography (including photo manipulation), video design, mobile application design and graphic design. Please click the Contact Us page above for more information on prices.
+
+
+
+Looking to expand your business? 
+
+Interested in finding out what services we offer? Please click the Services link above to find out more!		
+	</div>
+	<div data-role="footer" align="center">
+		 <p>&copy; 2013 - design by <a href="https://twitter.com/linlwill" title="Lindsay Link">Lindsay L. Williams</a></p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Services</h1>
+	</div>
+     <div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page">Home</a></li>
+            <li><a href="#page3">Contact Us</a></li>
+		</ul>		
+	</div>
+	<div data-role="content" data-theme="e">	
+		 <ul>
+		<li>Web Development</li>
+		<li>Photo Modification</li>
+		<li>Application Development</li>
+		<li>Marketing Strategies Development (such as Social Media outlets)</li>
+	    </ul>		
+	</div>
+	<div data-role="footer" align="center">
+		 <p>&copy; 2013 - design by <a href="https://twitter.com/linlwill" title="Lindsay Link">Lindsay L. Williams</a></p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Contact Us</h1>
+	</div>
+    <div data-role="content">	
+		<ul data-role="listview">
+        	<li><a href="#page">Home</a></li>
+			<li><a href="#page2">Services</a></li>
+		</ul>		
+	</div>
+	<div data-role="content" data-theme="e">	
+		 <h1>Contact Us</h1>
+	  <form id="contact_form" action="" method="get">
+		<div align="center"><span class="required_notification">* Denotes Required Field</span>
+		  <br></br>
+	    </div>
+		<div>
+        	<label> 
+        		<span>Name:</span>
+            	<input type="text" id="fname" width="auto" name="name" placeholder="John Doe" tabindex="1" required>*
+            <script>
+			(function() {
+ 
+    		// Create input element for testing
+   			 var input = document.createElement('input');
+     
+    		// Create the support object
+    		var supports = {};
+     
+    		supports.required    = 'required' in input;
+     
+    		//fallback for required
+    		if(!supports.required) {
+         
+    		}
+     		//show that the submit process is occuring  by changing the submit button
+    		var send = document.getElementById('contact_submit');
+    			if(send) {
+        			send.onclick = function () {
+            		this.innerHTML = 'Submitting Form...';
+       				 }
+    			}
+ 
+			})();
+			</script>
+        	</label>
+		</div>
+        <div>
+			<label> 
+        		<span>Email:</span>
+            	<input type="email" id="femail" width="auto" name="email" placeholder="john_doe@example.com" tabindex="2" required>*
+        	</label>
+        </div>
+        <div>
+			<label> 
+        		<span>Website:</span>
+            	<input type="url" id="fwebsite" width="auto" name="website" placeholder="http://johndoe.com/" tabindex="3">
+        	</label>
+        </div>
+        <div>
+			<label> 
+        		<span>Message:</span>
+            	<textarea name="message" id="fmessage" rows="6" width="auto" height="auto" placeholder="Enter your text here...." tabindex="4" required></textarea>*
+        	</label>
+        </div>
+        <div>
+		<button class="submit" type="submit" name="submit" id="contact_submit">Submit Form</button>
+        </div>
+	  </form>
+      <script>
+	  $("#contact_form").submit(function(){
+		  alert("Your Information was sent to us! Thank you for your interest in using our company to suit your web needs. We will respond within 24 hours.");
+		});
+	  </script>		
+	</div>
+	<div data-role="footer" align="center">
+		 <p>&copy; 2013 - design by <a href="https://twitter.com/linlwill" title="Lindsay Link">Lindsay L. Williams</a></p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+	</div>
+</div>
+
+</body>
+</html>
