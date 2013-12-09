@@ -1,0 +1,15 @@
+@media (max-width: 600px){
+div img{
+	/*---Round Corners---*/
+    border-radius: 12px; /*---Opera 10.5, IE9---*/
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* IE */
+}
+div audio{
+	/*---Round Corners---*/
+    border-radius: 12px; /*---Opera 10.5, IE9---*/
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* IE */
+}
